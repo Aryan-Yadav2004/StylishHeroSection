@@ -81,33 +81,32 @@ const Hero: React.FC = () => {
                     WELCOME ITZFIZZ
                 </h1>
 
-                {/* Fire Trail! Unlocks the text and illuminates the road behind the car */}
-                <div ref={trailRef} className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-tron-fire to-tron-red backdrop-blur-md z-20 overflow-hidden shadow-[0_0_40px_rgba(255,0,60,0.8)] border-r-[3px] border-white max-w-full">
+                {/* Racing Start Line */}
+                <div className="absolute left-0 top-0 h-full w-6 md:w-12 z-10 opacity-70" style={{ backgroundImage: 'repeating-conic-gradient(#fff 0% 25%, #000 0% 50%)', backgroundSize: '16px 16px' }}></div>
 
+                {/* Racing Finish Line */}
+                <div className="absolute right-0 top-0 h-full w-6 md:w-12 z-10 opacity-70" style={{ backgroundImage: 'repeating-conic-gradient(#fff 0% 25%, #000 0% 50%)', backgroundSize: '16px 16px' }}></div>
+
+                {/* Dark Red Trail! Unlocks the text and illuminates the road behind the car */}
+                <div ref={trailRef} className="absolute left-0 top-0 h-full w-0 bg-red-950/90 backdrop-blur-md z-20 overflow-hidden shadow-[0_0_40px_rgba(255,0,0,0.8)] border-r-4 border-red-600 max-w-full">
                     {/* Glowing Revealed Text */}
                     <div className="absolute left-0 w-screen h-full flex items-center justify-center">
-                        <h1 className="text-center text-white font-heading font-extrabold text-4xl md:text-6xl lg:text-7xl tracking-[0.2em] md:tracking-[0.4em] whitespace-nowrap drop-shadow-[0_0_15px_rgba(255,255,255,0.9)] select-none">
+                        <h1 className="text-center text-black font-heading font-extrabold text-4xl md:text-6xl lg:text-7xl tracking-[0.2em] md:tracking-[0.4em] whitespace-nowrap drop-shadow-[0_0_15px_rgba(255,0,0,1)] select-none">
                             WELCOME ITZFIZZ
                         </h1>
                     </div>
-                    {/* Extra intense glow overlay inside the fire */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/20 mix-blend-overlay"></div>
                 </div>
 
                 {/* Real Car Image */}
                 <div ref={carRef} className="absolute z-30 flex items-center justify-center pointer-events-none">
-                    {/* 
-                         We downloaded the top-down McLaren into public/car.png.
-                         Because top-down cars usually face up (north), we rotate it 90deg to face right (east).
-                     */}
-                    <div className="relative">
+                    <div className="relative h-full flex items-center">
                         <img
                             src="/car.png"
                             alt="Supercar"
-                            className="w-24 md:w-40 object-contain drop-shadow-[0_0_20px_rgba(255,69,0,0.8)] transform rotate-90"
+                            className="h-32 md:h-48 w-auto object-contain drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]"
                         />
                         {/* Glow surrounding the vehicle itself */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-tron-fire/40 blur-2xl rounded-full mix-blend-screen -z-10 animate-pulse"></div>
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full w-full bg-red-600/40 blur-2xl rounded-full mix-blend-screen -z-10 animate-pulse"></div>
                     </div>
                 </div>
             </div>
