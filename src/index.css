@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;600;800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-neon-cyan: #00E5FF;
+  --color-neon-pink: #FF0055;
+  --color-neon-purple: #9D00FF;
+  --color-neon-yellow: #FFEA00;
+  --font-heading: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
 
 @layer base {
   body {
