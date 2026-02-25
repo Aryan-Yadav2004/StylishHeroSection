@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
 
             {/* The Road / Track */}
             {/* The road is purely black before the car comes, as requested */}
-            <div ref={roadRef} className="relative w-full h-32 md:h-48 bg-black flex items-center z-10 border-y border-white/5 shadow-[0_0_30px_rgba(0,0,0,0.8)]">
+            <div ref={roadRef} className="relative w-full h-32 md:h-48 bg-black flex items-center z-10 border-y-4 border-red-600 shadow-[0_0_30px_rgba(255,0,0,0.8),inset_0_0_20px_rgba(255,0,0,0.5)]">
 
                 {/* Hidden/Dark Base Text - completely invisible or extremely dark before trail hits */}
                 <h1 className="absolute w-full text-center text-black/40 font-heading font-extrabold text-4xl md:text-6xl lg:text-7xl tracking-[0.2em] md:tracking-[0.4em] whitespace-nowrap z-10 select-none drop-shadow-none">
@@ -98,12 +98,12 @@ const Hero: React.FC = () => {
                 </div>
 
                 {/* Real Car Image */}
-                <div ref={carRef} className="absolute z-30 flex items-center justify-center pointer-events-none">
+                <div ref={carRef} className="absolute z-30 flex items-center justify-center h-full pointer-events-none">
                     <div className="relative h-full flex items-center">
                         <img
                             src="/car.png"
                             alt="Supercar"
-                            className="h-32 md:h-48 w-auto object-contain drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]"
+                            className="h-full w-auto object-cover drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]"
                         />
                         {/* Glow surrounding the vehicle itself */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full w-full bg-red-600/40 blur-2xl rounded-full mix-blend-screen -z-10 animate-pulse"></div>
