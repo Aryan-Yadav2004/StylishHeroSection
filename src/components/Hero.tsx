@@ -92,18 +92,18 @@ const Hero: React.FC = () => {
                     {/* Glowing Revealed Text */}
                     <div className="absolute left-0 w-screen h-full flex items-center justify-center">
                         <h1 className="text-center text-black font-heading font-extrabold text-4xl md:text-6xl lg:text-7xl tracking-[0.2em] md:tracking-[0.4em] whitespace-nowrap drop-shadow-[0_0_15px_rgba(255,0,0,1)] select-none">
-                            WELCOME ITZFIZZ
+                            HIRE MEEZZZZZ
                         </h1>
                     </div>
                 </div>
 
                 {/* Real Car Image */}
-                <div ref={carRef} className="absolute z-30 flex items-center justify-center h-full pointer-events-none">
+                <div ref={carRef} className="absolute z-30 flex items-center justify-center pointer-events-none">
                     <div className="relative h-full flex items-center">
                         <img
                             src="/car.png"
                             alt="Supercar"
-                            className="h-full w-auto object-cover drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]"
+                            className="h-32 md:h-48 w-auto object-contain drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]"
                         />
                         {/* Glow surrounding the vehicle itself */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full w-full bg-red-600/40 blur-2xl rounded-full mix-blend-screen -z-10 animate-pulse"></div>
@@ -115,32 +115,32 @@ const Hero: React.FC = () => {
             <div ref={stat1Ref} className="absolute top-[15%] left-[5%] md:left-[15%] z-20 opacity-0 pointer-events-none">
                 <div className="p-6 md:p-8 rounded-xl w-64 md:w-72 border border-tron-blue/30 bg-[#0a0a0c]/80 backdrop-blur-md shadow-[0_0_20px_rgba(0,225,255,0.15)] flex flex-col items-center text-center">
                     <TrendingUp className="text-tron-blue w-8 h-8 mb-4 drop-shadow-[0_0_8px_rgba(0,225,255,0.8)]" />
-                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading tracking-wider">58%</h3>
-                    <p className="text-slate-400 font-medium text-sm md:text-base leading-snug uppercase tracking-widest">Increase Pick Up</p>
+                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading tracking-wider">TOP 7</h3>
+                    <p className="text-slate-400 font-medium text-sm md:text-base leading-snug uppercase tracking-widest">Central India Hackathon</p>
                 </div>
             </div>
 
             <div ref={stat2Ref} className="absolute bottom-[15%] left-[8%] md:left-[22%] z-20 opacity-0 pointer-events-none">
                 <div className="p-6 md:p-8 rounded-xl w-64 md:w-72 border border-tron-red/30 bg-[#0a0a0c]/80 backdrop-blur-md shadow-[0_0_20px_rgba(255,0,60,0.15)] flex flex-col items-center text-center">
                     <Smartphone className="text-tron-red w-8 h-8 mb-4 drop-shadow-[0_0_8px_rgba(255,0,60,0.8)]" />
-                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading tracking-wider">23%</h3>
-                    <p className="text-slate-400 font-medium text-sm md:text-base leading-snug uppercase tracking-widest">Decreased Calls</p>
+                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading tracking-wider">Top 250</h3>
+                    <p className="text-slate-400 font-medium text-sm md:text-base leading-snug uppercase tracking-widest">Odoo Hackathon Finalist</p>
                 </div>
             </div>
 
             <div ref={stat3Ref} className="absolute top-[15%] right-[8%] md:right-[22%] z-20 opacity-0 pointer-events-none">
                 <div className="p-6 md:p-8 rounded-xl w-64 md:w-72 border border-tron-red/30 bg-[#0a0a0c]/80 backdrop-blur-md shadow-[0_0_20px_rgba(255,0,60,0.15)] flex flex-col items-center text-center">
                     <Activity className="text-tron-red w-8 h-8 mb-4 drop-shadow-[0_0_8px_rgba(255,0,60,0.8)]" />
-                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading tracking-wider">27%</h3>
-                    <p className="text-slate-400 font-medium text-sm md:text-base leading-snug uppercase tracking-widest">Increase Usage</p>
+                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading tracking-wider">AIR 536</h3>
+                    <p className="text-slate-400 font-medium text-sm md:text-base leading-snug uppercase tracking-widest">Code Clash</p>
                 </div>
             </div>
 
             <div ref={stat4Ref} className="absolute bottom-[15%] right-[5%] md:right-[15%] z-20 opacity-0 pointer-events-none">
                 <div className="p-6 md:p-8 rounded-xl w-64 md:w-72 border border-tron-blue/30 bg-[#0a0a0c]/80 backdrop-blur-md shadow-[0_0_20px_rgba(0,225,255,0.15)] flex flex-col items-center text-center">
                     <Zap className="text-tron-blue w-8 h-8 mb-4 drop-shadow-[0_0_8px_rgba(0,225,255,0.8)]" />
-                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading tracking-wider">40%</h3>
-                    <p className="text-slate-400 font-medium text-sm md:text-base leading-snug uppercase tracking-widest">Speed Improved</p>
+                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading tracking-wider">HIRE ME</h3>
+                    <p className="text-slate-400 font-medium text-sm md:text-base leading-snug uppercase tracking-widest">Aryan Yadav</p>
                 </div>
             </div>
 
